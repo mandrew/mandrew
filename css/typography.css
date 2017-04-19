@@ -1,0 +1,178 @@
+/**
+ * Typography styles
+ *
+ * This typography file is included in the WYSIWYG editor and the front end. It provides
+ * a place to add link styles and font styles you would like in the CMS and the Front End.
+ * It has been merged from BlackCandy theme but updated to hopefully show all styles needed
+ *
+ * Note: for new styles please use the format ".typography (style name) {}" as TinyMCE will
+ * then know to include this style in the WYSIWYG editor
+ *
+ * Author: Michael Andrewartha
+ */
+
+ 
+/**
+ * Generic styles
+ */
+.typography * { font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+
+/**
+ * Paragraphs 
+ */
+.typography p { color: #444; font-size: 1em; line-height: 1.3em; margin: 10px 0; }
+
+/**
+ * Italics 
+ */
+.typography em { font-style: italic; }
+
+/**
+ * Quotes
+ */
+/* .typography blockquote,
+.typography q { quotes: none; font-style: italic; }
+
+.typography blockquote:before,
+.typography blockquote:after,
+.typography q:before,
+.typography q:after { content: ""; content: none; } */
+
+/**
+ * Links 
+ */
+.item-holder a.external,
+.typography a { position: relative; margin-right: 18px; }
+.typography a,
+.typography a:active,
+.typography a:visited { color: #444; text-decoration: none; }
+	.typography a:hover { color: #444; }
+
+	/**
+	 * Link icons - merged from BlackCandy theme and will only work if you view the
+	 * site in IE8+, FF, Safari, Chrome and you include the images in the correct folder
+	 */
+	a.external span,
+	.typography a.external span {
+		position: absolute;
+		top: -5px;
+		right: -18px;
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: #fafafa;
+		-webkit-transform: rotate(40deg); 
+		-moz-transform: rotate(40deg);
+	}
+	footer a.external span {
+		background: #444;
+	}
+	.typography a[href$=".pdf"],
+	.typography a[href$=".PDF"],
+	.typography a.pdf { padding-left: 18px; background: url(../images/icons/page_white_acrobat.png) no-repeat left center; }
+	
+	.typography a[href$=".doc"],
+	.typography a[href$=".DOC"],
+	.typography a.doc { padding-left: 18px; background: url(../images/icons/page_word.png) no-repeat left center; }
+	
+	.typography a[href$=".xls"],
+	.typography a[href$=".XLS"],
+	.typography a.xls { padding: 2px; padding-left: 18px; background: url(../images/icons/page_excel.png) no-repeat left center; }
+	
+	.typography a[href$=".gz"],
+	.typography a[href$=".GZ"],
+	.typography a[href$=".gzip"],
+	.typography a[href$=".GZIP"],
+	.typography a[href$=".zip"],
+	.typography a[href$=".ZIP"],
+	.typography a.archive { padding-left: 18px; background: url(../images/icons/page_white_zip.png) no-repeat left center; }
+	
+	/**
+ 	 * Note: Note: .exe files can't be uploaded by default
+ 	 */
+	.typography a[href$=".exe"],
+	.typography a[href$=".EXE"],
+	.typography a.application { padding-left: 18px; background: url(../images/icons/application.png) no-repeat left center; }
+
+/**
+ * List styles
+ * Note: List styles have no default styling; define those yourself
+ */
+/* .typography ul, 
+.typography ol {} */
+
+/**
+ * Header styles
+ * Note: Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+ */
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 { font-weight: 300; }
+
+.typography h1 {
+	font-size: 2.7em;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin: 0;
+}
+.typography h2 {
+	font-size: 2.1em;
+	line-height: 1.3em;
+	font-weight: 300;
+	margin: 0;
+}
+.typography h3 {
+	font-size: 1.5em;
+	line-height: 1.2em;
+	font-weight: 300;
+	margin: 0;
+}
+.typography h4 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	font-weight: 300;
+	margin: 0;
+	/*padding-top:20px;*/
+}
+
+
+/**
+ * Table styles
+ * Tables have no default styling; define these yourself
+ * TIP: leave the default styling blank and set up extra styles as below
+ */
+.typography .formalTable { border: 1px solid red; }
+
+/**
+ * WYSIWYG Editor Alignment Classes 
+ */
+.typography .left { text-align: left; }
+.typography .center { text-align: center; }
+.typography .right { text-align: right; }
+
+/**
+ * Images
+ * Note: check adding images in a paragraph works fine .typography p img {}
+ */
+.typography img { border: none; }
+	.typography img.right { float: right;margin-left: 20px; }
+	.typography img.left { float: left; margin-right: 20px; }
+	.typography img.leftAlone { float: left; margin-right: 100%; }
+	.typography img.center { float: none; margin-left: auto; margin-right: auto; display: block; }
+	
+/**
+ * Images with a caption
+ * Note: set margin here to separate caption from image and body text
+ * .typography .captionImage,
+ * .typography .captionImage img {}
+ * Note: by default the image caption alignment is set to the image alignment
+ * which looks strange so setting the text align by default fixes this issue
+ */
+	.typography .captionImage.right { float: right; margin-left: 20px; }
+	.typography .captionImage.left { float: left; margin-right: 20px; }
+	.typography .captionImage.center { float: none; margin-left: auto; margin-right: auto; }
+	.typography .captionImage p.caption { font-weight: normal; text-align: left; }
