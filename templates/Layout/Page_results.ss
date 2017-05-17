@@ -2,7 +2,6 @@
 	<div id="main-content" class="typography" role="main">
 		<% include Breadcrumbs %>
 		<h2>$Title</h2>
-		<% include SideMenu %>
 		<% if Query %>
 			<p class="searchQuery"><strong>You searched for &quot;{$Query}&quot;</strong></p>
 		<% end_if %>
