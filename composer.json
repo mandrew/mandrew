@@ -1,0 +1,21 @@
+{
+    "name": "mandrew/mandrew",
+    "description": "Michael Andrewartha theme",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "authors": [
+        {
+            "name": "Michael Andrewartha",
+            "homepage": "http://mike.andrewartha.co.nz"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.5.x-dev"
+        }
+    }
+}
