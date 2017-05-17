@@ -3,6 +3,7 @@
     "description": "Michael Andrewartha theme",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Michael Andrewartha",
